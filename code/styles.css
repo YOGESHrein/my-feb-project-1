@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,500;1,400;1,600;1,700&display=swap");
+body {
+    font-family: "Nunito", sans-serif;
+    line-height: 1.5;
+}
+
+.bw {
+    background-color: #fff;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* navbar */
+
+.ttsz {
+    font-size: 16.5pt;
+}
+
+.fixed-top.sticky {
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(90deg, rgb(0, 225, 255, 0.9), rgba(17, 25, 254, 0.9));
+}
+
+.navbar {
+    transition: all 0.5s;
+}
+
+.ttsz1 {
+    font-size: 18pt;
+}
+
+
+/* hover */
+
+.nav-link::after {
+    content: '';
+    opacity: 0;
+    transition: all 0.5s;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+}
+
+.nav-link:hover::after {
+    opacity: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.5s ease;
+    font-weight: 400;
+}
+
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    z-index: 2;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(7, 51, 57), rgba(17, 25, 254, 0.5));
+    z-index: -1;
+}
+
+.h-sect {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-cover {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+}
+
+.btn {
+    padding: 14px 23px;
+    background: linear-gradient(rgba(0, 225, 255, 0.3), rgba(17, 25, 254, 0.5));
+    transition: all 0.5s ease;
+}
+
+.btn-main {
+    background: linear-gradient(#00e1ff4d, #1119fe80);
+    border-radius: 100px;
+    border: none;
+    font-weight: 600;
+    color: #fff;
+}
+
+.btn:hover {
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+
+/* .sect-intro{
+    margin-bottom: 40px;
+}
+.sect-intro.solid{
+    height: 4px;
+    width: 700px;
+    background: linear-gradient( #00e1ff4d, #1119fe80);
+    margin: auto;
+    position: absolute;
+
+} */
+
+.plan {
+    position: relative;
+}
+
+
+/* hr line start*/
+
+hr.one {
+    margin-left: 45%;
+    height: 3.5%;
+    border-radius: 5px;
+    width: 10%;
+    background: linear-gradient(90deg, rgb(0, 225, 255, 0.9), rgba(17, 25, 254, 0.9));
+}
+
+
+/* hr line end */
+
+
+/* divider start */
+
+.spac {
+    margin-top: -5%;
+}
+
+.astrodivider {
+    margin: 64px auto;
+    width: 400px;
+    max-width: 100%;
+    position: relative;
+}
+
+.astrodividermask {
+    overflow: hidden;
+    height: 20px;
+}
+
+.astrodividermask:after {
+    content: '';
+    display: block;
+    margin: -25px auto 0;
+    width: 100%;
+    height: 25px;
+    border-radius: 125px / 12px;
+    box-shadow: 0 0 8px #049372;
+}
+
+.astrodivider span {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 100%;
+    margin-bottom: -25px;
+    left: 50%;
+    margin-left: -25px;
+    border-radius: 100%;
+    box-shadow: 0 2px 4px #4fb39c;
+    background: #fff;
+}
+
+.astrodivider i {
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    border-radius: 100%;
+    border: 1px dashed #68beaa;
+    text-align: center;
+    line-height: 40px;
+    font-style: normal;
+    color: #049372;
+}
+
+
+/* divider end */
+
+
+/* .ser .ser-img .icon1{
+width: 70px;
+height: 70px;
+background: linear-gradient(#00e1ff, #1119fe);
+color: #fff;
+border-radius: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+position: absolute;
+bottom: -45px;
+left: 20.5%; */
+
+
+/* }
+.icon1{
+    position: absolute;
+} */
+
+.v-btn {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(#1119fe, #00e1ff);
+    display: inline-flex;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.tool {
+    width: 18%;
+}
+
+.count {
+    width: 17%;
+}
+
+form .form-control {
+    border-radius: 0;
+    background: transparent;
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.7);
+}
+
+.fd {
+    height: 54px;
+}
+
+form .form-control::placeholder {
+    color: #fff;
+}
+
+.fd:focus {
+    color: #fff;
+    background: transparent;
+    border-color: #fff;
+}
+
+.fd1:focus {
+    color: #fff;
+    background: transparent;
+}
+
+footer {
+    background: rgb(0, 225, 255);
+    background: linear-gradient(90deg, rgb(60, 100, 150) 18%, rgb(53, 60, 255) 84%);
+    color: #fff;
+    /* display: flex;
+  align-content: center;
+  justify-content: center; */
+}
+
+footer a {
+    color: #fff;
+}
